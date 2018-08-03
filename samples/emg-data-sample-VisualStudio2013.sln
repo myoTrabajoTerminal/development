@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emg-data-sample-VisualStudio2013", "emg-data-sample-VisualStudio2013.vcxproj", "{84A009B7-A1C8-4C96-BEF5-BC098CA4C2C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gestureRecognition", "..\gestureRecognition\gestureRecognition.vcxproj", "{25821950-F1B9-4D4E-A9C1-17C42179FC93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,19 @@ Global
 		{84A009B7-A1C8-4C96-BEF5-BC098CA4C2C2}.Release|x64.Build.0 = Release|x64
 		{84A009B7-A1C8-4C96-BEF5-BC098CA4C2C2}.Release|x86.ActiveCfg = Release|Win32
 		{84A009B7-A1C8-4C96-BEF5-BC098CA4C2C2}.Release|x86.Build.0 = Release|Win32
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Debug|x64.ActiveCfg = Debug|x64
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Debug|x64.Build.0 = Debug|x64
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Debug|x86.ActiveCfg = Debug|Win32
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Debug|x86.Build.0 = Debug|Win32
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Release|x64.ActiveCfg = Release|x64
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Release|x64.Build.0 = Release|x64
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Release|x86.ActiveCfg = Release|Win32
+		{25821950-F1B9-4D4E-A9C1-17C42179FC93}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3CF59DF-A642-4EE2-A9E3-43779233AD40}
 	EndGlobalSection
 EndGlobal
