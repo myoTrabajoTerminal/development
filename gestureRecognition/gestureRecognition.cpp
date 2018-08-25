@@ -11,15 +11,17 @@ struct dato {
 	vector<vector<int>> valores;
 };
 
-struct sigma {
+struct value {
 	string clase;
-	vector<int> valor;
+	vector<int> standarDeviation;
+	vector<int> arithmeticMean;
 };
 
 vector<dato> readCSV(string ruta); //Lee el archivo de excel con extension csv. Regresa un vector con los valores de EMG
 void printVector(vector<dato> raws); //Funcion para imprimir el vector de vectores
 vector<dato> changeType(vector<vector<string>> raws); //Recibe un vector con vectores de cadenas para regresar un vector con vectores de enteros
-vector<sigma> standardDeviation(vector<dato> vals); //Funcion para calcular la desviacion estandar de el vector con vectores de enteros, regresa los valores de sigma en un vector de enteros
+vector<value> standardDeviation(vector<dato> vals); //Funcion para calcular la desviacion estandar de el vector con vectores de enteros, regresa los valores de sigma en un vector de enteros
+void arithmeticMean(vector<vector<int>> vals);
 
 int main(){
 	vector<dato> vals;
@@ -121,17 +123,20 @@ vector<dato> changeType(vector<vector<string>> raws) {
 	return SIGMA;
 }*/
 
-/*vector<sigma> standardDeviation(vector<dato> vals) {
-	int sigma[8] = { 0 };
-	vector<int> SIGMA;
+vector<value> standardDeviation(vector<dato> vals) {
+	vector<value> out;
+	value aux;
+	for (int clase = 0; clase < vals.size(); clase++) {
+		aux.clase = vals[clase].clase;
+		arithmeticMean(vals[clase].valores);
+	}
+}
+
+void arithmeticMean(vector<vector<int>> vals) {
 	for (int i = 0; i < vals.size(); i++) {
 		for (int j = 0; j < vals[i].size(); j++) {
-			sigma[j] = sigma[j] + vals[i][j];
+			cout << vals[i][j] << '\t';
 		}
+		cout << endl;
 	}
-	for (int i = 0; i < 8; i++) {
-		cout << sigma[i] << endl;
-		SIGMA.push_back(sigma[i]);
-	}
-	return SIGMA;
-}*/
+}
